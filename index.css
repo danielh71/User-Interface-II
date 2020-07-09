@@ -20,23 +20,37 @@ vertical-align: baseline;
 border: 1px solid darkred;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 html {
-    background: grey;
+    background: #87cefa;
     color: #f5f5f5;
 }
-.header {
+.header {    
     display: flex;
     height: 30px;
     padding: 20px;
 }
 .name {
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    color: #DC143C;
+    font-weight: bold;
     display: flex;
-    width: 50%;    
+    width: 50%;  
+    text-align: center;
+    /* justify-content: center;   */
+    align-items: center;
 }
 .nav {
+    font-family: 'Bangers', cursive;
+    font-size: 25px;    
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     width: 50%;  
+    /* align-items: flex-end; */
+    align-content: flex-end;
+
 }  
 .main {
     height: 50vh;
@@ -49,10 +63,29 @@ html {
     background-size: contain;
 }
 .main h1 {
-    
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    color: #ffebcd;
+    font-weight: bold;
+    display: flex;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;    
 }
 .main h2 {
-    
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    color: #ffebcd;
+    font-weight: bold;
+    display: flex;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .projects {
     padding: 20px;
@@ -60,8 +93,8 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    /* align-items: center; */
-    align-content: center;
+    align-items: center;
+    text-align: center;
 }
 .projects img {
     width: 350px;
@@ -70,19 +103,29 @@ html {
     display: flex;   
 }
 .projects h3 {
+    display: flex;
     width: 100px;
     height: 50px;
     padding: 10px;
-    /* justify-content: center; */
-    /* text-align: center; */
-    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
 }
-.class 1 2 3 4 5 6 {
+.button {
+    width: 100%;
+    height: 50px;
+    padding: 100px;
     display: flex;
-    margin: 2%;
-    padding: 20px;
-    flex-direction: column; 
-    text-align: center;     
+    justify-content: space-evenly;
+    align-content: center;
 }
+.contact {
+    height: 50px;
+    width: 150px;
+    background: maroon;
+    color: white;
+}
+.footer {
 
-
+}
