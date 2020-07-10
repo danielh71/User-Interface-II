@@ -137,4 +137,16 @@ html {
     background: maroon;
     color: white;
 }
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.media img {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 75px;  
+}
+
 
