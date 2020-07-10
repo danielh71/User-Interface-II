@@ -21,8 +21,17 @@ vertical-align: baseline;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@keyframes cool {
+    0% {background-color: #ff0000;}
+    20% {background-color: #ffa500;}
+    40% {background-color: #ffff00;}
+    60% {background-color: #008000;}
+    80% {background-color: #460082}
+    100% {background-color: #ee82ee;}
+}
 
 html {
+    animation: cool 24s linear infinite;
     background: #87cefa;
     color: #f5f5f5;
 }
