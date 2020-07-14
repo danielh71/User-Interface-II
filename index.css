@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+/* border: 1px solid darkred; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@keyframes rainbow {
+    0% {background-color: #ff0000;}
+    20% {background-color: #ffa500;}
+    40% {background-color: #ffff00;}
+    60% {background-color: #008000;}
+    80% {background-color: #460082}
+    100% {background-color: #ee82ee;}
+}
+@keyframes lettering {
+    0% {color: #ee82ee;}
+    20% {color: #460082;}
+    40% {color: #008000;}
+    60% {color: #ffff00;}
+    80% {color: #ffa500;}
+    100% {color: #ff0000}
+}
+
+html {
+    animation: rainbow 24s linear infinite;
+    background: #87cefa;
+    color: #f5f5f5;
+    font-size: 62.5%;
+}
+* {
+    /* box-sizing: border-box; */
+}
+/*Head of Page Section Content Styling*/
+.header {    
+    display: flex;
+    height: 20vh;
+    padding-left: 2%;    
+}
+.header .name {
+    font-family: 'Bangers', cursive;
+    font-size: 4.8rem;
+    color: #8b0000;
+    font-weight: bold;
+    display: flex;
+    width: 50%;      
+    align-items: center;
+    animation: lettering 24s linear infinite;
+}
+.header .nav {
+    font-family: 'Bangers', cursive;
+    font-size: 2.2rem;       
+    display: flex;
+    justify-content: flex-end;     
+    align-items: center;  
+    width: 50%;   
+}  
+.nav a {
+    margin: 0 3%;    
+}
+/*Top Section Content Styling*/
+#header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./images/blue sky.jpg"); 
+    background-size: contain;
+}
+#header h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.8rem;
+    color: #ffebcd;
+    font-weight: bold;
+    display: flex;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+}
+/*Middle Section Content Styling*/
+.projects {
+   width: 100%;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+   text-align: center;
+   margin: 2% 0;
+}
+.projects .one {
+    width: 31%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.projects .one img {
+    width: 100%;
+    margin: 0;     
+}
+.projects .one h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8b0000;
+}
+/*Footer Content Styling*/
+.button {
+    width: 100%;
+    height: 20%;    
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.contact {    
+    font-family: 'Bangers', cursive;
+    font-size: 3.6rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    background: maroon;
+    color: white;
+}
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 0;    
+}
+.media img {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 75px;  
+}
+/*Media Query Assignment Styling*/
+
+@media (max-width: 800px) {
+/*Header Content Styling @ 800px*/
+.header {
+    display: flex;
+    flex-direction: column;  
+    width: 100%;     
+}
+.header .name {
+    font-size: 4rem;
+    width: 100%;
+    justify-content: center;
+}
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    font-size: 2.2rem;
+}
+/*Main Image & Name Styling @ 800px*/
+#header {
+    width: 100%;
+    margin-top: 13%;
+}
+#header h2 {
+    width: 100%;
+}
+/*Projects Section Styling @ 800px*/
+.projects .one {
+    width: 43%;
+    margin: 4% 2%;
+}
+/*Footer Section Styling @ 800px*/
+.media img {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+}
+.contact {
+    font-size: 2.8rem;
+}
+
+@media (max-width: 500px) {
+    .header .name {
+        font-size: 3rem;
+    }
+    .header .nav {
+        font-size: 1.8rem;
+    }
+    /*Main Image & Name Styling @ 500px*/
+    .main {
+        width: 100%;
+        margin-top: 14%;
+    }
+    .main h1, h2 {
+        width: 100%;
+    }
+    .main h2 {
+        font-size: 2rem;
+    }
+    /*Footer Section Styling @ 500px*/
+    .media img {
+        height: 25px;
+        width: 25px;
+        padding: 0;
+    }
+    .contact {
+        font-size: 2.1rem;
+    }
+}
